@@ -2,26 +2,30 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Button, Grid, Link, TextField, Typography } from "@mui/material"
 import { AuthLayout } from "../layout/AuthLayout"
 import { useForm } from '../../hooks';
+import { useState } from 'react';
 
 const formData = {
-    email: 'braulio@google.com',
-    password: 'password',
-    displayName: 'Braulio Rodríguez'
+    email: '',
+    password: '',
+    displayName: ''
 }
+
 const formValidations = {
-    email: [(value) => { value.inludes('@') }, 'El correo debe tener un @'],
-    password: [(value) => { value.length >= 6 }, 'El password debe de teber más de 6 letras'],
-    displayName: [(value) => { value.length >= 1 }, 'El nombre es olbigatorio']
+    email: [(value) => value.includes('@'), 'El correo debe tener un @'],
+    password: [(value) => value.length >= 6, 'El password debe de teber más de 6 carácteres'],
+    // displayName: [(value) => { value.length >= 1 }, 'El nombre es olbigatorio'] este c+odigo me daba error pues siempre aparecía "el nombre es olbigatorio" la manera correcta es (value) => { return value.length >= 1 }
+    displayName: [(value) => value.length >= 1, 'El nombre es obligatorio.'],
 }
 export const RegisterPage = () => {
+    const [formSubmitted, setFormSubmitted] = useState(false)
     const {
         formState, displayName, email, password, onInputChange,
         isFormValid, displayNameValid, emailValid, passwordValid,
-    }
-        = useForm(formData, formValidations);
+    } = useForm(formData, formValidations);
 
     const onSubmit = (event) => {
         event.preventDefault();
+        setFormSubmitted(true);
         console.log(formState);
     }
 
@@ -38,6 +42,8 @@ export const RegisterPage = () => {
                             name="displayName"
                             value={displayName}
                             onChange={onInputChange}
+                            error={!!displayNameValid && formSubmitted} //con doble nagación se convierte en valor booleano
+                            helperText={displayNameValid}
                         />
                     </Grid>
                     <Grid item xs={12} sx={{ mt: 2 }}>
@@ -49,6 +55,8 @@ export const RegisterPage = () => {
                             name="email"
                             value={email}
                             onChange={onInputChange}
+                            error={!!emailValid && formSubmitted}
+                            helperText={emailValid}
                         />
                     </Grid>
                     <Grid item xs={12} sx={{ mt: 2 }}>
@@ -60,6 +68,8 @@ export const RegisterPage = () => {
                             name="password"
                             value={password}
                             onChange={onInputChange}
+                            error={!!passwordValid && formSubmitted}
+                            helperText={passwordValid}
                         />
                     </Grid>
                     <Grid container spacing={2} sx={{ mb: 2, mt: 1 }}>

@@ -5,23 +5,26 @@ import { Google } from "@mui/icons-material"
 import { Button, Grid, Link, TextField, Typography } from "@mui/material"
 import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks';
-import { checkingAuthentication, startGoogleSignIn } from '../../store/auth';
+import { checkingAuthentication, startLoginWithEmailPassword, startGoogleSignIn } from '../../store/auth';
 
 export const LoginPage = () => {
     const { status } = useSelector(state => state.auth);
     const dispatch = useDispatch();
     const { email, password, onInputChange, formState } = useForm({
         email: 'braulio@google.com',
-        password: 'password'
+        password: '123456'
     });
     const isAuthenticated = useMemo(() => status === 'checking', [status]);
     const onSubmit = (event) => {
         event.preventDefault();
-        dispatch(checkingAuthentication());
+        dispatch(startLoginWithEmailPassword({ email, password }));
     }
     const onGoogleSignIn = () => {
         dispatch(startGoogleSignIn());
     }
+    // const onEmailPasswordSignIn = () => {
+    //     dispatch(startLoginWithEmailPassword(formState));
+    // }
     return (
         <AuthLayout title="Login" >
             <form onSubmit={onSubmit}>
@@ -55,6 +58,7 @@ export const LoginPage = () => {
                                 type="submit"
                                 variant='contained'
                                 fullWidth
+                            // onClick={onEmailPasswordSignIn}
                             >
                                 Login
                             </Button>

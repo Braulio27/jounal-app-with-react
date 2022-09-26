@@ -1,0 +1,40 @@
+{
+    "user": {
+        "uid": "jSzg6eFPf7OTmem4BYkdSrYWljZ2",
+        "email": "braulio@google.com",
+        "emailVerified": false,
+        "displayName": "Braulio Rodríguez",
+        "isAnonymous": false,
+        "providerData": [
+            {
+                "providerId": "password",
+                "uid": "braulio@google.com",
+                "displayName": "Braulio Rodríguez",
+                "email": "braulio@google.com",
+                "phoneNumber": null,
+                "photoURL": null
+            }
+        ],
+        "stsTokenManager": {
+            "refreshToken": "AOEOulZC-aJwwE9IXgM039LwvqTK86Ay6i3uh--p33y_90-6Nm41SPHmFn1cXHvHZWJ3pCl1ulTcUe_4Ae3PlY-_8YdxbmaZLTTFK3dfUtzKKP9K3_Gqt3YVYn8nOMRYNyczqTLv7Rf8E7fXK459WLUamPfHtKhHQgLBMvQ-Ky-NiA3kGWgh0A6lHQmdmTgG-o7EN0c-CFSzB2-VAarZb7IxgCzu7dbSYQ-8FQpeae4KWi6QDCRjGxnWAjo0JaObL9Jlz8-Ig41o",
+            "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjIxZTZjMGM2YjRlMzA5NTI0N2MwNjgwMDAwZTFiNDMxODIzODZkNTAiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQnJhdWxpbyBSb2Ryw61ndWV6IiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2pvdXJuYWwtcmVhY3QtYXBwLWZhMGVlIiwiYXVkIjoiam91cm5hbC1yZWFjdC1hcHAtZmEwZWUiLCJhdXRoX3RpbWUiOjE2NjQyMjMxMjksInVzZXJfaWQiOiJqU3pnNmVGUGY3T1RtZW00QllrZFNyWVdsaloyIiwic3ViIjoialN6ZzZlRlBmN09UbWVtNEJZa2RTcllXbGpaMiIsImlhdCI6MTY2NDIyMzEyOSwiZXhwIjoxNjY0MjI2NzI5LCJlbWFpbCI6ImJyYXVsaW9AZ29vZ2xlLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJicmF1bGlvQGdvb2dsZS5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.XgOnYe-sNl_MpLEwYxgXXoPM30vhUaYuAW6p75Usb10vVDEE8dI6GeVK6Na-NmOdbTyv3L3Oh-j9-yZ8iW5YPYkp9r9YjWD0k-l5jCgDyqXYPNytLvNsP4_0EPiyFCpddEwF_2lGocPYlJMVDEnTy9lBX6zYcmXfTaayDDV8J8vUTus-NWO-Q7hu0_ObLphnSTXAtYuIpo0424H5l-TRfLPbF6MMEpRl9Bbanm7_PUrHDNHKcf4KaIAVE0dm3VNnlgLp0unlr8ii_Az-Lb7Y_SSTJqZXV1WFA-ji4dqFwrgLeu0SSRKopRnw2GZmo_YOfGJcIWSTrkGcsOXQBRAuDg",
+            "expirationTime": 1664226729419
+        },
+        "createdAt": "1664222109728",
+        "lastLoginAt": "1664223024923",
+        "apiKey": "AIzaSyA7JckNO4AvT1bKYTbBPP_cgHXhKiAJ7S0",
+        "appName": "[DEFAULT]"
+    },
+    "providerId": null,
+    "_tokenResponse": {
+        "kind": "identitytoolkit#VerifyPasswordResponse",
+        "localId": "jSzg6eFPf7OTmem4BYkdSrYWljZ2",
+        "email": "braulio@google.com",
+        "displayName": "Braulio Rodríguez",
+        "idToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjIxZTZjMGM2YjRlMzA5NTI0N2MwNjgwMDAwZTFiNDMxODIzODZkNTAiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQnJhdWxpbyBSb2Ryw61ndWV6IiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL2pvdXJuYWwtcmVhY3QtYXBwLWZhMGVlIiwiYXVkIjoiam91cm5hbC1yZWFjdC1hcHAtZmEwZWUiLCJhdXRoX3RpbWUiOjE2NjQyMjMxMjksInVzZXJfaWQiOiJqU3pnNmVGUGY3T1RtZW00QllrZFNyWVdsaloyIiwic3ViIjoialN6ZzZlRlBmN09UbWVtNEJZa2RTcllXbGpaMiIsImlhdCI6MTY2NDIyMzEyOSwiZXhwIjoxNjY0MjI2NzI5LCJlbWFpbCI6ImJyYXVsaW9AZ29vZ2xlLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJicmF1bGlvQGdvb2dsZS5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.XgOnYe-sNl_MpLEwYxgXXoPM30vhUaYuAW6p75Usb10vVDEE8dI6GeVK6Na-NmOdbTyv3L3Oh-j9-yZ8iW5YPYkp9r9YjWD0k-l5jCgDyqXYPNytLvNsP4_0EPiyFCpddEwF_2lGocPYlJMVDEnTy9lBX6zYcmXfTaayDDV8J8vUTus-NWO-Q7hu0_ObLphnSTXAtYuIpo0424H5l-TRfLPbF6MMEpRl9Bbanm7_PUrHDNHKcf4KaIAVE0dm3VNnlgLp0unlr8ii_Az-Lb7Y_SSTJqZXV1WFA-ji4dqFwrgLeu0SSRKopRnw2GZmo_YOfGJcIWSTrkGcsOXQBRAuDg",
+        "registered": true,
+        "refreshToken": "AOEOulZC-aJwwE9IXgM039LwvqTK86Ay6i3uh--p33y_90-6Nm41SPHmFn1cXHvHZWJ3pCl1ulTcUe_4Ae3PlY-_8YdxbmaZLTTFK3dfUtzKKP9K3_Gqt3YVYn8nOMRYNyczqTLv7Rf8E7fXK459WLUamPfHtKhHQgLBMvQ-Ky-NiA3kGWgh0A6lHQmdmTgG-o7EN0c-CFSzB2-VAarZb7IxgCzu7dbSYQ-8FQpeae4KWi6QDCRjGxnWAjo0JaObL9Jlz8-Ig41o",
+        "expiresIn": "3600"
+    },
+    "operationType": "signIn"
+}

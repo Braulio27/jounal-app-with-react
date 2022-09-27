@@ -16,7 +16,7 @@ export const CheckingAuth = () => {
                 justifyContent='center'
             >
                 {/* <CircularProgress color='warning' /> */}
-                <div class="spinner">
+                <div className="spinner">
                     <div></div>
                     <div></div>
                     <div></div>

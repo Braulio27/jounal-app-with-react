@@ -22,9 +22,6 @@ export const LoginPage = () => {
     const onGoogleSignIn = () => {
         dispatch(startGoogleSignIn());
     }
-    // const onEmailPasswordSignIn = () => {
-    //     dispatch(startLoginWithEmailPassword(formState));
-    // }
     return (
         <AuthLayout title="Login" >
             <form onSubmit={onSubmit}>

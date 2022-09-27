@@ -15,7 +15,19 @@ export const CheckingAuth = () => {
                 direction='row'
                 justifyContent='center'
             >
-                <CircularProgress color='warning' />
+                {/* <CircularProgress color='warning' /> */}
+                <div class="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </Grid>
         </Grid>
     )

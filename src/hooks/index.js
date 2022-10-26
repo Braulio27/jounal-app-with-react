@@ -1,2 +1,2 @@
 export * from './useForm';
-export * from './useCheckOut';
+export * from './useCheckAuth';
